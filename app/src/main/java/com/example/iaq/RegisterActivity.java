@@ -62,6 +62,8 @@ public class RegisterActivity extends AppCompatActivity {
         back.setOnClickListener(view -> {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
+            // Apply the animation
+            overridePendingTransition(R.anim.anim_fade_in, R.anim.anim_fade_out);
         });
 
         //Click to textview LOGIN
@@ -70,6 +72,8 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(intent);
+                // Apply the animation
+                overridePendingTransition(R.anim.anim_fade_in, R.anim.anim_fade_out);
             }
         });
 
@@ -180,6 +184,8 @@ public class RegisterActivity extends AppCompatActivity {
                                     Toast.makeText(RegisterActivity.this, "Sign up successfully", Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                                     startActivity(intent);
+                                    // Apply the animation
+                                    overridePendingTransition(R.anim.anim_fade_in, R.anim.anim_fade_out);
                                 }
                             });
                 }

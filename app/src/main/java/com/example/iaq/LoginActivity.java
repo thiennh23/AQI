@@ -45,6 +45,19 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
+                // Apply the animation
+                overridePendingTransition(R.anim.anim_fade_in, R.anim.anim_fade_out);
+            }
+        });
+
+        //Textview REGISTER
+        tv_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+                // Apply the animation
+                overridePendingTransition(R.anim.anim_fade_in, R.anim.anim_fade_out);
             }
         });
 
@@ -66,6 +79,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
+                // Apply the animation
+                overridePendingTransition(R.anim.anim_fade_in, R.anim.anim_fade_out);
             }
         });
 
@@ -125,6 +140,8 @@ public class LoginActivity extends AppCompatActivity {
                     Log.i("Login123", Token.refresh_token);
                     Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
                     startActivity(intent);
+                    // Apply the animation
+                    overridePendingTransition(R.anim.anim_fade_in, R.anim.anim_fade_out);
                 } else {
                     Toast.makeText(LoginActivity.this, "Login Failed!", Toast.LENGTH_SHORT).show();
                 }

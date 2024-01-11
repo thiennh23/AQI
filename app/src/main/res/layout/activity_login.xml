@@ -98,7 +98,7 @@
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="match_parent"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/Login"
             android:textAllCaps="false"
@@ -112,8 +112,9 @@
             android:layout_height="wrap_content"
             android:text="@string/back"
             android:textAllCaps="false"
+            android:layout_marginTop="-50dp"
+            android:layout_marginStart="180dp"
             android:backgroundTint="#62929e"
-            android:layout_marginTop="15dp"
             />
 
         <TextView
