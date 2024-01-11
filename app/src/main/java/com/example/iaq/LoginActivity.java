@@ -13,8 +13,11 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.iaq.Models.Token;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -28,11 +31,22 @@ public class LoginActivity extends AppCompatActivity {
     Button btn_login, btn_back;
     TextView tv_register;
     CheckBox showPass, rememberMe;
+    ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         FindViewByID();
+
+        //TEST
+        imageView = findViewById(R.id.logo);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
 
         //Button Login
         //Login
@@ -108,6 +122,7 @@ public class LoginActivity extends AppCompatActivity {
                     Token Token = response.body();
                     Log.i("Login123", response.toString());
                     APIClient.token = Token.access_token;
+                    Log.i("Login123", Token.refresh_token);
                     Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
                     startActivity(intent);
                 } else {

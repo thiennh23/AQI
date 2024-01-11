@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaf4f4"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:background="#eaf4f4"
+        tools:context=".RegisterActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+        <ImageView
+            android:layout_width="147dp"
+            android:layout_height="107dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_app" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/createaccount"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/provideInfo"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/username"
+            android:textSize="12sp"
+            android:textColor="#E92C0C"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usernameHint"
+            android:inputType="textPersonName"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edttext_design"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="5dp"
+            android:longClickable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/email"
+            android:textSize="12sp"
+            android:textColor="#E92C0C"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edttext_design"
+            android:hint="@string/emailhint"
+            android:inputType="textEmailAddress"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="5dp"
+            android:longClickable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/password"
+            android:textSize="12sp"
+            android:textColor="#E92C0C"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passwordhint"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edttext_design"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/visibility_off"
+            android:longClickable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/ConfirmPassword"
+            android:textSize="12sp"
+            android:textColor="#E92C0C"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:id="@+id/edt_rePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ConfirmPasswordHint"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edttext_design"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/visibility_off"
+            android:longClickable="false"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="@string/Register"
+            android:textAllCaps="false"
+            android:backgroundTint="#62929e"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginStart="180dp"
+            android:backgroundTint="#62929e"
+            android:text="@string/back"
+            android:textAllCaps="false" />
+
+        <WebView
+            android:id="@+id/wv_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_marginTop="-40dp"
+            android:layout_marginStart="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/showpass"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Show password"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/orwith"
+            android:layout_marginLeft="100dp"
+            android:textSize="12sp"
+            android:textColor="#E92C0C"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/alreadyhaveacc"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/LoginTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/link"
+            android:text="@string/Login" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

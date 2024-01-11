@@ -1,5 +1,8 @@
 package com.example.iaq;
 
+import com.example.iaq.Models.Status;
+import com.example.iaq.Models.Token;
+
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
