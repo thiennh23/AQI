@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">IAQ</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="FPass">Forgot Password</string>
+    <string name="Google">Google</string>
+    <string name="Github">Github</string>
+    <string name="Facebook">Facebook</string>
+    <string name="back">Go back</string>
+    <!--  LOGIN/REGISTER  -->
+    <string name="tvLoginHi">Hi, Wecome Back! 👋</string>
+    <string name="wemiss">Hello again, you’ve been missed!</string>
+    <string name="username">Username</string>
+    <string name="usernameHint">Thien123</string>
+    <string name="emailhint">21522626@gm.uit.edu.vn</string>
+    <string name="password">Password</string>
+    <string name="orwith">Or With</string>
+    <string name="passwordhint">Please enter your password</string>
+    <string name="donthaveaccount">Don’t have an account ? </string>
+    <string name="registernow">Register now</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="email">Email Address</string>
+    <string name="ConfirmPasswordHint">Please enter your password again</string>
+    <string name="createaccount">Create an account</string>
+    <string name="provideInfo">Enter your personal information!</string>
+    <string name="alreadyhaveacc">Already have an account ?</string>
 </resources>
