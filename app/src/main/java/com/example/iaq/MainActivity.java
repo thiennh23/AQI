@@ -2,8 +2,11 @@ package com.example.iaq;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.iaq.Models.Status;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -18,7 +21,10 @@ public class MainActivity extends AppCompatActivity {
         TextView txt1 = findViewById(R.id.textview1);
         TextView txt2 = findViewById(R.id.textview2);
 
-        apiInterface = APIClient.getClient().create(APIInterface.class);
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(intent);
+
+       /* apiInterface = APIClient.getClient().create(APIInterface.class);
         Call<Status> call = apiInterface.getInfo();
         call.enqueue(new Callback<Status>() {
             @Override
@@ -33,6 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 txt1.setText("error");
                 txt2.setText("error");
             }
-        });
+        });*/
     }
 }

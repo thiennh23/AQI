@@ -1,4 +1,4 @@
-package com.example.iaq;
+package com.example.iaq.Models;
 
 import com.google.gson.annotations.SerializedName;
 

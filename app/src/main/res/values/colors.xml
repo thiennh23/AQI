@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="btnBlue">#351a96</color>
+    <color name="link">#0000EE</color>
+    <color name="pieRed">#EC6B56</color>
+    <color name="pieYellow">#FFC154</color>
+    <color name="pieGreen">#47B39C</color>
+    <color name="piBle">#00008B</color>
 </resources>
